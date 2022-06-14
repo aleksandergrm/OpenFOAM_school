@@ -1,0 +1,15 @@
+List available modules:
+    $> module avail openfoam
+    $> ml av openfoam (equvalent with upper command)
+    
+Load specific module:
+    $> module load gnuplot/5.0.5-foss-2016b
+    $> ml gnuplot/5.0.5-foss-2016b (equvalent with upper command)
+    
+For OpenFOAM to be running on HPC@ULFS we need to load this modules:
+    $> ml openfoam-2112-gcc-11.2.0-lhrpyq4
+    $> ml ml qt-5.15.3-gcc-8.5.0-scmeit7 (graphics libs for gnuplot)
+    $> ml gnuplot/5.0.5-foss-2016b (for foamMonitor application)
+    
+    and load you Python evn with
+    $> source work/Python/local/bin/activate (or path where your local Python is) 
