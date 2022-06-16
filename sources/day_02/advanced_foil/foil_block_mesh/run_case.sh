@@ -7,10 +7,11 @@ usage()
 }
 
 path=$(pwd)
-case=$path/simpleFoam
+case=simpleFoam
 
 # clean case
-$case/Allclean -c $case
+cd $path/$case
+./Allclean
 
 
 no_args="true"
@@ -77,7 +78,7 @@ fi
 
 echo "Running case: simpleFoam";
 echo "Foil angle: $angle [deg]";
-$case/Allrun -c $case > log.run &
-sleep 2s
+cd $path/$case
+./Allrun $case
 
-foamMonitor -l -r 1 $case/postProcessing/residuals/0/residuals.dat
+#foamMonitor -l -r 1 $case/postProcessing/residuals/0/residuals.dat

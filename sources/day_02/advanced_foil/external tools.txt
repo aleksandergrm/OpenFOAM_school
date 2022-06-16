@@ -2,4 +2,4 @@
   $> paraFoam -builtin
   
 2. logs monitor
-  $> foamMonitor -l -r 1 case/postProcessing/residuals/0/residuals.dat (must include system/residual in controlDict)
+  $> foamMonitor -l -r 1 case/postProcessing/residuals/0/solverInfo.dat (must include system/residual in controlDict)

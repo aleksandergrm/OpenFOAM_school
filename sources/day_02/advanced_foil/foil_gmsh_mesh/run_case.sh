@@ -61,11 +61,11 @@ cp -rf $path/foil_mesh/constant/polyMesh $path/$pfCase/constant
 cp -rf $path/foil_mesh/constant/polyMesh $path/$case/constant
 
 cd $path/$pfCase
-./Allrun
+./Allrun $pfCase
 cp -rf $path/$pfCase/0/p $path/$pfCase/0/U $path/$case/0
 
 cd $path/$case
-./Allrun
+./Allrun $case
 
 # Check the running process with: 
 # - tail -f $case/log.$case

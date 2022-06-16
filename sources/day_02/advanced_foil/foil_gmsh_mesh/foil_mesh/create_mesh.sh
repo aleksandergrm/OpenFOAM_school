@@ -1,6 +1,21 @@
 #!/bin/bash
 cd ${0%/*} || exit 1    # Run from this directory
 
+module purge
+module load openfoam-2112-gcc-11.2.0-lhrpyq4
+
+# Check for Python environment !
+py_path=$HOME/work/Python/local/bin
+if [ -d $py_path ] 
+then
+    echo "Python env $py_path exists."
+    source $py_path/activate
+else
+    echo "Error: Python env $py_path does not exists !"
+    echo "       Exit program !"
+    exit 99
+fi
+
 # Source tutorial run functions
 . $WM_PROJECT_DIR/bin/tools/RunFunctions
 
