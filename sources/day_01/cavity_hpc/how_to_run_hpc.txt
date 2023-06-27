@@ -1,1 +1,0 @@
-sbatch run_hpc.sh 

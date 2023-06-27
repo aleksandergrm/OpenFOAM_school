@@ -1,3 +1,0 @@
-tempSimpleFoam.C
-
-EXE = $(FOAM_APPBIN)/tempSimpleFoam

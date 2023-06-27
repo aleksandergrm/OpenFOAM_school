@@ -1,3 +1,0 @@
-wallCalciteFluxFvPatchScalarField.C
-
-LIB = $(FOAM_LIBBIN)/libWallCalciteFlux
