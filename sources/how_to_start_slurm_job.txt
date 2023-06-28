@@ -1,4 +1,4 @@
-To run a script containing directives to start parallel jobs you need sbatch command, example with script "run_hpc.sh"
+To run a script containing directives to start parallel jobs you need sbatch command. Example running in parallel at HPC with a script "sources/part_01/cavity_hpc/run_hpc.sh"
 
   $> sbatch run_hpc.sh
 
