@@ -6,7 +6,8 @@
 #SBATCH --ntasks-per-node=16
 
 module purge
-module load openfoam-2112-gcc-11.2.0-lhrpyq4
+module load OpenFOAM/10-foss-2022a
+source $FOAM_BASH
 
 # Source tutorial run functions
 . $WM_PROJECT_DIR/bin/tools/RunFunctions

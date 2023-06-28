@@ -19,3 +19,8 @@
      
     4. Install new packages (active env local):
      $(local)> pip install numpy scipy sympy matplotlib gmsh (!! install gmsh if needed!!)
+
+* GMSH for mesh generator:
+    $> ml av gmsh
+    $> ml gmsh/4.11.1-foss-2022a
+

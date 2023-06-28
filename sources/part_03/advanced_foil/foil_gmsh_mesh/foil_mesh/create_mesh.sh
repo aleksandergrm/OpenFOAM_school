@@ -2,7 +2,8 @@
 cd ${0%/*} || exit 1    # Run from this directory
 
 module purge
-module load openfoam-2112-gcc-11.2.0-lhrpyq4
+module load OpenFOAM/10-foss-2022a
+source $FOAM_BASH
 
 # Check for Python environment !
 py_path=$HOME/work/Python/local/bin
