@@ -15,7 +15,7 @@ cd $path/$case
 
 
 no_args="true"
-U_file=$case/0/U
+U_file=0/U
 
 while getopts a: flag
 do
